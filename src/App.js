@@ -5,15 +5,17 @@ import './App.css';
 
 import Header from './components/header/header.component'
 import HomePage from '../src/pages/homepage/homepage.component'
+import SingInAndSingUp from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component'
 import ShopPage from '../src/pages/shop/shop.component'
 
 function App() {
   return (
     <div>
-      <Header/>
+      <Header />
       <Switch>
         <Route exact path='/' component={HomePage} />
         <Route path='/shop' component={ShopPage} />
+        <Route path='/singin' component={SingInAndSingUp} />
       </Switch>
       {/* <Route exact path='/blog/asdqw/topics' component={TopicsList} />
       <Route path='/blog/asdqw/topics/:topicId' component={TopicDetail} />
